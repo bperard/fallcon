@@ -44,4 +44,9 @@ fallcon.on('connection', (socket) => {
     console.log('EVENT', eventNotification);
   });
 
+
+  // DISCONNECT MESSAGE
+  socket.on('disconnect', () => {
+    console.log(`User ${socket.id} has disconnected`);
+  });
 });
