@@ -1,0 +1,20 @@
+{
+  "name": "fallcon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bperard/fallcon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bperard/fallcon/issues"
+  },
+  "homepage": "https://github.com/bperard/fallcon#readme"
+}
