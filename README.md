@@ -1,6 +1,6 @@
-# LAB - Class 11
+# LAB - Class 14
 
-## Project: CAPS
+## Project: FALLCON
 
 ### Author: Adrienne Frey, Rafael Aldana Sandoval, Brandon Perard, Ken Holt
 

@@ -8,7 +8,12 @@ const server = new Server();
 const PORT = process.env.PORT || 3002;
 server.listen(PORT);
 
-// create queue(s)
+
+// CREATE INVENTORY QUEUES
+const supplyQueue = new Queue();
+const shippingQueue = new Queue();
+const retialStockQueue = new Queue();
+
 
 // SOCKET.IO SINGLETON
 const fallcon = server.of('/fallcon');
