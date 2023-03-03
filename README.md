@@ -24,7 +24,6 @@ The server provides the routing of communication between the manufacturer, distr
 
 PORT=designates port Socket.IO server uses
 
-
 #### How to initialize/run your application (where applicable)
 
 - npm i to install dependencies
