@@ -2,7 +2,7 @@
 
 ## Project: CAPS
 
-### Author: Adrienne Frey, Rafael Sandoval, Brandon Perard, Ken Holt
+### Author: Adrienne Frey, Rafael Aldana Sandoval, Brandon Perard, Ken Holt
 
 ### Problem Domain  
 
