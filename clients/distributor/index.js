@@ -7,7 +7,7 @@ const { socket } = require('../socket');
 socket.on('REQUEST_DELIVERY', (product) => {
   socket.emit('PRODUCT_PICKED_UP', product);
 
-  console.log('Distributor: Product picked');
+  console.log('Distributor: Product picked up');
   setTimeout(() => {
     socket.emit('PRODUCT_DELIVERED', product);
     console.log(`Distributor: ${product.productName} was delivered to the retailer.`);

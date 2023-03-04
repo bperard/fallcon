@@ -37,10 +37,21 @@ fallcon.on('connection', (socket) => {
     supplyQueue.delete(product);
     shippingQueue.store(product);
   });
-  
+
   socket.on('PRODUCT_DELIVERED', (product) => {
     socket.broadcast.emit('PRODUCT_DELIVERED', product);
   });
+
+  socket.on('PRODUCT_PURCHASED', (product) => {
+    supplyQueue.store(product);
+    socket.broadcast.emit('PRODUCT_PURCHASED', product);
+  });
+
+  socket.on('PRODUCT_RESTOCKED', (product) => {
+    shippingQueue.delete(product);
+    retailStockQueue.store(product);
+  });
+
   // CONSOLE LOGS EACH SOCKET EVENT, DATE, & ATTACHED INFO
   socket.onAny((event, attachedEventInfo) => {
     const eventNotification = {

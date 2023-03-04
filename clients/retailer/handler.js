@@ -1,8 +1,14 @@
 'use strict';
 
 const Chance = require('chance');
-const chance = new Chance();  // may not be needed in each handler module
+const chance = new Chance();  
 
+const productUpdate = (product) => ({
+  ...product,
+  company: chance.company(),
+  address: chance.address(),
+  price: chance.dollar(),
+  country: chance.country(),
+});
 
-
-module.exports = { };  // add handler functions for export
+module.exports = {productUpdate};  
